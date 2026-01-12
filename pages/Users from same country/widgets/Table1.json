@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 55,
+  "bottomRow": 59,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -114,7 +114,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -129,13 +133,16 @@
   "isVisibleSearch": true,
   "key": "ddauqz5oz9",
   "label": "Data",
-  "leftColumn": 4,
+  "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 38,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 26,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
+  "onRowSelected": "{{FindCountry.run().then(() => {\n  FindUsersFromCountry.run();\n});}}",
+  "originalBottomRow": 59,
+  "originalTopRow": 6,
   "parentColumnSpace": 10.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -551,11 +558,11 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 33,
   "searchKey": "",
   "tableData": "{{FetchUser.data}}",
   "textSize": "0.875rem",
-  "topRow": 1,
+  "topRow": 6,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
