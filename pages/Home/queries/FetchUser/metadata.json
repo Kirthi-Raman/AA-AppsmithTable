@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69530022027fd51e78bb1a61_3125c5fe-ed92-4ece-8d5d-48183b5e7fb1",
-  "id": "Page1_CreateUser",
+  "gitSyncId": "69530022027fd51e78bb1a61_89afd375-e045-4d40-a458-8603d14d6ba8",
+  "id": "Home_FetchUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"users\" (\"gender\", \"email\", \"name\")\n  VALUES ('{{CreateUserForm.formData.gender}}', '{{CreateUserForm.formData.email}}', '{{CreateUserForm.formData.name}}');",
+      "body": "SELECT * FROM public.\"users\" \nWHERE gender ILIKE '{{GenderFilter.selectedOptionValue}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "CreateUser",
-    "pageId": "Page1",
-    "runBehaviour": "MANUAL",
+    "name": "FetchUser",
+    "pageId": "Home",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

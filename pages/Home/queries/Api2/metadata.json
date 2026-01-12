@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69530022027fd51e78bb1a61_53c7f4e2-d9d7-4225-8cd6-c70a7f048b45",
-  "id": "Page1_Api1",
+  "gitSyncId": "69530022027fd51e78bb1a61_858883b6-2946-4d67-96c8-6130c99b842c",
+  "id": "Home_Api2",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -48,8 +48,8 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "name": "Api1",
-    "pageId": "Page1",
+    "name": "Api2",
+    "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
