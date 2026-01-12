@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "69530022027fd51e78bb1a61_c083b122-2d57-4e79-845f-6caaad4ffe8f",
+  "id": "Page1_Utils",
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "property",
+        "value": "\"User Name\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "69530022027fd51e78bb1a61_9ed50e57-8f46-4bdd-9ebf-ec6d2b87fc64",
+  "id": "Users from same country_Utils",
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Users from same country",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "property",
+        "value": "\"User Name\""
+      }
+    ]
+  }
+}
