@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69530022027fd51e78bb1a61_138bb87c-dfd8-474f-8791-9dd21d492e2d",
-  "id": "Page1_UpdateQuery",
+  "gitSyncId": "69530022027fd51e78bb1a61_ba4f6594-16e2-40fa-8382-d2036a036f00",
+  "id": "Home_DeleteUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"users\" SET\n    \"gender\" = '{{CreateUserForm.formData.gender}}',\n    \"email\" = '{{CreateUserForm.formData.email}}',\n    \"name\" = '{{CreateUserForm.formData.name}}'\n  WHERE id = '{{Table1.selectedRow.id}}'; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "DELETE FROM public.\"users\"\n  WHERE id = '{{Table1.selectedRow.id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "name": "UpdateQuery",
-    "pageId": "Page1",
+    "name": "DeleteUser",
+    "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
