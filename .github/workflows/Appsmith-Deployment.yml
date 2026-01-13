@@ -1,0 +1,13 @@
+name: appsmith-cd  # Workflow name
+
+on:
+  push:
+    branches:
+      - master  # Trigger on push to master branch
+
+jobs:
+  deploy-appsmith:
+    runs-on: ubuntu-latest  # Run on Ubuntu
+
+    steps:
+      - run: "curl --location --fail-early --request POST https://aisolutions.automationanywhere.com/api/v1/git/applications/69530022027fd51e78bb1a61/deploy?refName=main --header 'Authorization: Bearer ${{ secrets.APPSMITH_CD_KEY }}'"
