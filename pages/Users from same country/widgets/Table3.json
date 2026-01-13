@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 58,
+  "bottomRow": 48,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -34,12 +34,12 @@
   "columnOrder": [
     "id",
     "name",
-    "email"
+    "email",
+    "country"
   ],
-  "columnUpdatedAt": 1768251694163,
+  "columnUpdatedAt": 1768335900181,
   "columnWidthMap": {
-    "id": 70,
-    "name": 127
+    "id": 60
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -70,11 +70,17 @@
     },
     {
       "key": "primaryColumns.email.computedValue"
+    },
+    {
+      "key": "primaryColumns.country.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -90,25 +96,57 @@
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "z386mfwgv2",
+  "key": "kggkzw99f2",
   "label": "Data",
-  "leftColumn": 33,
+  "leftColumn": 31,
   "minWidth": 450,
-  "mobileBottomRow": 50,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 32,
-  "mobileTopRow": 22,
+  "mobileBottomRow": 67,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 39,
   "needsErrorInfo": false,
+  "onRowSelected": "{{}}",
   "parentColumnSpace": 10.25,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "country": {
+      "alias": "country",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"country\"])) : country })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "country",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "country",
+      "notation": "standard",
+      "originalId": "country",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "email": {
       "alias": "email",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table2.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"email\"])) : email })()}}",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"email\"])) : email })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -139,7 +177,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = Table2.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -170,7 +208,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table2.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : name })()}}",
+      "computedValue": "{{(() => { const tableData = Table3.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : name })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -199,15 +237,15 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchKey": "",
   "tableData": "{{FindUsersFromCountry.data}}",
   "textSize": "0.875rem",
-  "topRow": 6,
+  "topRow": 8,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "iktbcwjnh2",
-  "widgetName": "Table2"
+  "widgetId": "xrcstw390q",
+  "widgetName": "Table3"
 }
