@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6965575b027fd51e78bbb97a_36912f4d-3e81-4a3c-91dc-375f5bd54dd6",
+  "id": "Users from same country_CountrySelection",
+  "unpublishedCollection": {
+    "name": "CountrySelection",
+    "pageId": "Users from same country",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
