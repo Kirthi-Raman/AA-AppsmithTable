@@ -27,6 +27,14 @@
     {
       "id": "Users from same country",
       "isDefault": false
+    },
+    {
+      "id": "EmbeddedApp",
+      "isDefault": false
+    },
+    {
+      "id": "CustomApp",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
